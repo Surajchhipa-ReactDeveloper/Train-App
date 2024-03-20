@@ -1,0 +1,139 @@
+.Navbar_Container {
+  /* background-color: rgb(41, 39, 39); */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 8rem;
+  /* position: sticky; */
+  background-color: transparent;
+  top: 0rem;
+  left: 0rem;
+  z-index: 5;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.158) -20%,
+    rgba(0, 0, 0, 0.412) 40%
+  );
+}
+.Main_Logo {
+  width: 6rem;
+}
+.NavBar_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: ; */
+  gap: 15rem;
+}
+.ul {
+  display: flex;
+  font-family: "Lato-Bold";
+  list-style: none;
+  gap: 3.6rem;
+}
+.li {
+  font-size: 2rem;
+  font-family: "Lato-Bold";
+  color: var(--White);
+  cursor: pointer;
+}
+.li:hover {
+  /* color: var(--yellow); */
+  color: var(--primary_Blue_Button);
+}
+.Navbar_Left_Container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10rem;
+  position: relative;
+}
+.Navbar_Right_Left_Container {
+  display: flex;
+  gap: 1.8rem;
+
+  .Register {
+    padding: 1.2rem 3rem;
+    font-size: 2rem;
+    font-family: "Lato-Bold";
+    color: var(--White);
+    cursor: pointer;
+  }
+  .Register:hover {
+    color: var(--primary_Blue_Button);
+  }
+  .Login {
+    cursor: pointer;
+    padding: 1.2rem 3rem;
+    background-color: var(--primary_Blue_Button);
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: "Lato-Bold";
+    color: var(--White);
+    text-align: center;
+  }
+  .Login:hover {
+    background-color: var(--Green);
+  }
+}
+.Menu_button_container {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .NavBar_links {
+    display: none;
+  }
+  .Navbar_Container {
+    justify-content: space-between;
+  }
+  .Menu_button_container {
+    display: block;
+  }
+  .Mobile_Navbar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #2475ee;
+    z-index: 15;
+    transition: all 2s ease-in-out;
+    gap: 2.5rem;
+  }
+  .ul {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    /* height: 100svh; */
+  }
+  .Navbar_Right_Left_Container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .Hamburger_Menu {
+    object-fit: cover;
+    object-position: center;
+    width: 6rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+  }
+  .Login {
+    border: 0.001px solid white;
+  }
+  .li:hover {
+    color: #181a1c;
+  }
+
+  .Navbar_Right_Left_Container {
+    .Register:hover {
+      color: #181a1c;
+    }
+  }
+}

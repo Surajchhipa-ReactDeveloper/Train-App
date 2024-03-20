@@ -1,0 +1,40 @@
+.Drop_Down_Selection_Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.5rem;
+  padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+  background-color: #292c34;
+  border-radius: 1rem;
+  width: 100%;
+}
+.Drop_Down_Container {
+  p {
+    color: #515151 !important;
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+    background-color: #181a1c;
+  }
+}
+
+/* ::-webkit-calendar-picker-indicator {
+  display: none;
+} */
+.Selector_Img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DownArrow {
+  cursor: pointer;
+  width: 4rem;
+  padding: 0.3rem;
+}
+.Date {
+  font-size: 2.1rem;
+  color: white;
+}
+.option_Data {
+  color: white;
+  font-size: 1rem;
+}

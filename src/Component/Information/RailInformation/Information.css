@@ -1,0 +1,128 @@
+.Information {
+  width: 100%;
+  position: relative;
+  top: -43rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.Information_Box {
+  display: flex;
+  flex-direction: column;
+  background-color: #181a1c;
+  width: 124rem;
+  height: 55.6rem;
+  padding: 4rem 4rem;
+  border-radius: 4rem;
+}
+.Information_Center_Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.Welcome_Heading {
+  color: rgb(255, 255, 255);
+  font-size: 7rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.information_Heading {
+  color: white;
+  font-size: 2.4rem;
+  padding-left: 7rem;
+  margin: 1rem 0rem;
+}
+.IndiaLogo {
+  width: 5rem;
+  height: 5rem;
+  margin: 0rem 1rem;
+}
+.Information_Data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Information_Top_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+.Cross_Image {
+  padding: 0.8rem 0.3rem;
+}
+.RevArse {
+  width: 4rem;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+.Information_User_Option_Container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+}
+.Option_User {
+  width: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Welcome_Heading {
+    font-size: 6rem;
+  }
+  .Information_Box {
+    width: 120rem;
+    height: 55.6rem;
+    padding: 4rem 4rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .Information_Box {
+    width: 110rem;
+    height: 55.6rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .Information_Box {
+    width: 97rem;
+    height: 55.6rem;
+  }
+  .Information_Top_row {
+    flex-direction: column;
+    gap: 0rem;
+    width: 95%;
+  }
+  .Information_User_Option_Container {
+    width: 95%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .Option_User {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Information_Box {
+    width: 80rem;
+    /* height: 55.6rem; */
+    height: auto;
+  }
+  .Cross_Image {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RevArse {
+    padding-top: 0;
+  }
+}

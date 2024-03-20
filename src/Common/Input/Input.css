@@ -1,0 +1,147 @@
+.Input_Tag_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.InputLabel {
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: "Questrial-Regular";
+}
+.InputTag_Get_Input_Box {
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.User_Input_Tag_Common {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.Password_Img_Visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Input_Img_Get_Box {
+  display: flex;
+  border-radius: 1rem;
+  height: 6.4rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  background-color: #292c34;
+}
+.Input_Img_Get_Box2 {
+  max-height: 17rem !important;
+}
+.Input_Img_Get_Box_focused {
+  border: 2px solid #000000;
+  transition: all 1s ease-in-out;
+}
+.Input_Img_Get_Box_focused:hover {
+  border: 2px solid #292c34;
+  transition: all 1s ease-out;
+}
+.Password_Img_Visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.5rem; */
+}
+.InputIcon {
+  width: 4rem;
+}
+.InputEndIcon {
+  width: 3.5rem;
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+}
+.Label {
+  color: #515151 !important;
+}
+.Input,
+.Label {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: "Questrial-Regular";
+  color: #ffffff;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 1s;
+  /* background-color: #860d0d; */
+}
+.Input {
+  background-color: #292c34;
+}
+::placeholder {
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: "Questrial-Regular";
+  letter-spacing: 0.1rem;
+}
+.Text_Area_Container {
+  height: fit-content;
+}
+.TextArea {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: "Questrial-Regular";
+  /* border: 2px solid #8b575718; */
+  border: 2px solid #1818182a;
+  color: #20202069;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 250px;
+  max-height: 17rem;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  overflow: scroll;
+}
+textarea::-webkit-scrollbar {
+  border-radius: 12px;
+  width: 8px;
+}
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+  width: 8px;
+}
+/* ::webkit-w */
+::-webkit-scrollbar-thumb {
+  background-color: #0202027f;
+  border-radius: 10px;
+}
+
+.ErrorMassage {
+  position: absolute;
+  bottom: -2.2rem;
+  left: 0.2rem;
+  color: red;
+  font-size: 1.5rem;
+  font-family: "Questrial-Regular";
+
+  line-height: 2rem;
+}
+.ActiveErrorMassage {
+  color: red;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 550px) {
+  .Input_Img_Get_Box {
+    height: 6.5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  label {
+    display: none;
+  }
+  .User_Input_Tag_Common {
+    margin-bottom: 0rem;
+  }
+}

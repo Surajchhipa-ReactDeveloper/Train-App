@@ -1,0 +1,40 @@
+.Hero_Container {
+  position: relative;
+  top: 0;
+  background-image: url("../../Assets/Image/image\ 18.jpg");
+  min-width: 100%;
+  height: 100svh;
+  object-position: center right;
+  background-size: cover;
+}
+.Hero_Container_Small_Screen {
+  display: none;
+}
+
+.Hero_Container_Cover {
+  /* opacity:0%; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100svh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.205) 10%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+@media only screen and (max-width: 700px) {
+  .Hero_Container {
+    display: none !important;
+  }
+  .Hero_Container_Small_Screen {
+    display: block;
+    position: relative;
+    top: 0;
+    background-image: url("../../Assets/Image/Train.jpg");
+    min-width: 100%;
+    height: 100svh;
+    object-position: bottom center;
+    background-size:cover;
+  }
+}

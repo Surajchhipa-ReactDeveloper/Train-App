@@ -1,0 +1,31 @@
+.Service_Type_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #181a1c;
+  width: 23.1rem;
+  height: 21.3rem;
+  /* border: 2px solid red; */
+  /* padding: 6.2; */
+  border-radius: 2rem;
+
+  .Service_IMG {
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2022;
+    width: 10.1rem;
+    img {
+      padding: 2.4rem;
+      width: 10.1rem;
+      padding: 0.8rem;
+    }
+  }
+  p {
+    font-size: 2rem;
+    background-color: transparent;
+  }
+}
